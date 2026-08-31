@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delicious Bites - Restaurant</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+
+        <!-- Nom du restaurant -->
+        <a class="navbar-brand fw-bold" href="#">
+         Delicious Bites
+        </a>
+
+        <!-- Bouton responsive -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Ouvrir le menu"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Liens -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#accueil">
+                        Accueil
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">
+                        Menu
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#apropos">
+                        À propos de nous
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="accueil" class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content text-center text-white">
+
+        <h1 class="display-3 fw-bold">
+            Bienvenue chez Delicious Bites
+        </h1>
+
+        <p class="lead">
+            Des plats délicieux préparés avec passion
+        </p>
+
+        <a href="#menu" class="btn btn-warning btn-lg px-5">
+            Découvrir notre menu
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MENU ================= -->
+
+<section id="menu" class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Notre Menu
+            </h2>
+
+            <p class="text-muted">
+                Découvrez nos spécialités préparées avec des ingrédients frais.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- PLAT 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+                        class="card-img-top menu-image"
+                        alt="Pizza Margherita"
+                    >
+
+                    <div class="card-body">
+
+                        <h5 class="card-title fw-bold">
+                            Pizza Margherita
+                        </h5>
+
+                        <p class="card-text">
+                            Une délicieuse pizza avec tomates fraîches,
+                            mozzarella et basilic.
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center">
+
+                            <span class="badge bg-warning text-dark fs-6">
+                                7 500 FCFA
+                            </span>
+
+                            <button class="btn btn-outline-dark">
+                                Commander
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PLAT 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+                        class="card-img-top menu-image"
+                        alt="Salade fraîche"
+                    >
+
+                    <div class="card-body">
+
+                        <h5 class="card-title fw-bold">
+                            Salade Fraîche
+                        </h5>
+
+                        <p class="card-text">
+                            Une salade fraîche composée de légumes,
+                            avocat et sauce maison.
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center">
+
+                            <span class="badge bg-warning text-dark fs-6">
+                                5 000 FCFA
+                            </span>
+
+                            <button class="btn btn-outline-dark">
+                                Commander
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PLAT 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=800&q=80"
+                        class="card-img-top menu-image"
+                        alt="Poulet grillé"
+                    >
+
+                    <div class="card-body">
+
+                        <h5 class="card-title fw-bold">
+                            Poulet Grillé
+                        </h5>
+
+                        <p class="card-text">
+                            Poulet grillé accompagné de légumes
+                            et de pommes de terre.
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center">
+
+                            <span class="badge bg-warning text-dark fs-6">
+                                8 500 FCFA
+                            </span>
+
+                            <button class="btn btn-outline-dark">
+                                Commander
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= À PROPOS ================= -->
+
+<section id="apropos" class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- Image -->
+            <div class="col-12 col-md-6">
+
+                <img
+                    src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80"
+                    class="img-fluid rounded shadow"
+                    alt="Restaurant Delicious Bites"
+                >
+
+            </div>
+
+            <!-- Texte -->
+            <div class="col-12 col-md-6">
+
+                <h2 class="fw-bold mb-4">
+                    À propos de nous
+                </h2>
+
+                <p>
+                    Delicious Bites est un restaurant spécialisé dans
+                    la préparation de plats savoureux et modernes.
+                </p>
+
+                <p>
+                    Notre objectif est de proposer à nos clients une
+                    expérience culinaire exceptionnelle dans un cadre
+                    chaleureux et convivial.
+                </p>
+
+                <p>
+                    Nos chefs sélectionnent soigneusement des produits
+                    frais afin de garantir une qualité optimale dans
+                    chaque assiette.
+                </p>
+
+                <a href="#contact" class="btn btn-dark">
+                    Nous contacter
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Contactez-nous
+            </h2>
+
+            <p class="text-muted">
+                Une question ? Une réservation ? Écrivez-nous.
+            </p>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-8 col-lg-6">
+
+                <form>
+
+                    <div class="mb-3">
+
+                        <label for="nom" class="form-label">
+                            Nom complet
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="nom"
+                            placeholder="Votre nom"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="email" class="form-label">
+                            Adresse email
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="exemple@email.com"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="message" class="form-label">
+                            Message
+                        </label>
+
+                        <textarea
+                            class="form-control"
+                            id="message"
+                            rows="5"
+                            placeholder="Votre message..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn btn-warning w-100"
+                    >
+                        Envoyer le message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-dark text-white py-4">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6 text-center text-md-start">
+
+                <p class="mb-0">
+                    © 2026 Delicious Bites. Tous droits réservés.
+                </p>
+
+            </div>
+
+            <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+
+                <a href="#" class="text-white me-3">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#" class="text-white me-3">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="#" class="text-white me-3">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+
+                <a href="#" class="text-white">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
+```
